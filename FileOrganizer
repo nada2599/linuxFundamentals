@@ -1,0 +1,18 @@
+#!/usr/bin/bash
+declare Extension=""
+#echo "$1"
+for FileName in $(ls #if [[ ${FileName) == $1); do "."*]]; then
+Extension=${FileName##*.}
+if [[ ${Extension] == "txt" || $(Extension} == "jpg" || $(Extension] == "pdf" || $(Extension} == "zip" ]];then
+if [[! -d "$Extension" ]]; then
+sudo mkdir ${Extension}
+fi
+sudo mv $FileName $Extension
+fi
+if [ -d Misc 1]; then
+sudo mkdir Misc
+fi
+if [ -f $FileName && ! "$FileName" == "TaskA.sh" ]]; then
+sudo mv $FileName "Misc"
+fi
+done
